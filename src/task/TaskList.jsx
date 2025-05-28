@@ -5,7 +5,7 @@ export default function TaskList({ tasks, onEdit, onDelete, onFav }) {
         <div className="overflow-auto">
             <table className="table-fixed overflow-auto xl:w-full">
                 <thead>
-                    <tr>
+                    <tr className="border-b border-2 border-[#2E3443] [&>td]:align-baseline [&>td]:px-4 [&>td]:py-2">
                         <th className="p-4 pb-8 text-sm font-semibold capitalize w-[48px]"></th>
                         <th className="p-4 pb-8 text-sm font-semibold capitalize w-[300px]">
                             {" "}
@@ -33,7 +33,7 @@ export default function TaskList({ tasks, onEdit, onDelete, onFav }) {
                     {tasks.map((task) => (
                         <tr
                             key={task.id}
-                            className="border-b border-[#2E3443] [&>td]:align-baseline [&>td]:px-4 [&>td]:py-2">
+                            className="border-b border-2 border-[#2E3443] [&>td]:align-baseline [&>td]:px-4 [&>td]:py-2">
                             <td>
                                 <button onClick={() => onFav(task.id)}>
                                     {task.isFavorite ? (
