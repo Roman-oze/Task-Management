@@ -10,7 +10,7 @@ export default function Header() {
                         src={LWSLogo}
                         alt="Lws"
                     /> */}
-                    <h1 className='text-4xl font-bold ml-5'>Roman <span className='text-[#F5BF42]'> Oze </span> 
+                    <h1 className='text-4xl font-bold ml-5'> <span className='text-[#F5BF42]'> Task</span> Management 
                         </h1>
                 </a>
             </div>
